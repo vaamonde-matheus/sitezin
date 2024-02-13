@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja's lanches</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style/styles.css">
 </head>
 <body>
+    <script>
+        // Função para reproduzir o áudio quando a página é clicada
+        function playAudio() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+
+        // Adiciona um ouvinte de evento de clique à página
+        document.addEventListener("click", playAudio);
+    </script>
+
+    <!-- Elemento de áudio oculto -->
+    <audio id="audio" src="./audio/boom sound effect.mp3"></audio>
     <header>
         <img src="./images/logo.jpg" alt="some text" width=150 height=150>
         <h1>Loja's lanches</h1>
@@ -15,7 +28,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="./paginas/sobre.html">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
@@ -24,15 +37,15 @@
         <section class="destaques">
             <div class="row">
                 <div class="coluna">
-                  <img src="./images/camiseta.webp"  width="300"
+                  <img src="./images/moleto.jpg"  width="300"
                   height="300" alt="qual foi o camiseto">
                 </div>
                 <div class="coluna">
-                  <img src="./images/moltom.webp" alt="moletom bem feito"  width="250"
+                  <img src="./images/moltom.jpg" alt="moletom bem feito"  width="250"
                   height="300">
                 </div>
                 <div class="coluna">
-                  <img src="./images/oculo.jpg" alt="oculo"  width="300"
+                  <img src="./images/moletom.jpg" alt=""  width="300"
                   height="300">
                 </div></div>
         </section>
