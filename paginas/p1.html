@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja's lanches</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.jpg" alt="Logo da Loja" width="150" height="150">
+        <h1>Loja's Lanches</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="../paginas/sobre.html">Sobre</a></li>
+                <li><a href="../paginas/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="destaques">
+            <div class="row">
+                <div class="coluna">
+                    <img id="tshirtImage" src="../images/camiseta.webp" width="300" height="300" alt="Camiseta">
+                </div>
+                <div class="coluna">
+                    <p>
+                        Camiseta Bem Legal com Tecido Molinho, nos Tamanhos:
+                        <form>
+                            <select name="tamanho">
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                                <option value="GG">GG</option>
+                            </select>
+                            <h2>Nas cores:</h2>
+                            <button type="button" onclick="trocarImagem('branca')">Branca</button>
+                            <button type="button" onclick="trocarImagem('preta')">Preta</button>
+                        </form>
+                    </p>
+                    <p>compra</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Loja's Lanches</p>
+    </footer>
+
+    <script>
+        function trocarImagem(cor) {
+            var imagem = document.getElementById('tshirtImage');
+            if (cor === 'branca') {
+                imagem.src = '../images/camisetab.png'; // Caminho da imagem da camiseta branca
+            } else if (cor === 'preta') {
+                imagem.src = '../images/camiseta.webp'; // Caminho da imagem da camiseta preta
+            }
+        }
+    </script>
+</body>
+</html>
